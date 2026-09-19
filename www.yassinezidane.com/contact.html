@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Inquiries — Yassine Zidane</title>
+  <meta name="description" content="Get in touch with Yassine Zidane for enterprise product design, banking platforms, and design system consulting.">
+  <link rel="icon" type="image/png" href="Images/Favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================== -->
+  <!-- HEADER NAVIGATION                                                        -->
+  <!-- ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Yassine Zidane Home">
+        <svg class="sparkle-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0L14.7 9.3L24 12L14.7 14.7L12 24L9.3 14.7L0 12L9.3 9.3L12 0Z"/>
+        </svg>
+        <span>Yassine Zidane</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="work.html" class="nav-link">Work</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <a href="contact.html" class="btn-header-cta" style="background-color: var(--accent-purple);">Let's get in touch</a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================== -->
+    <!-- PAGE HERO                                                              -->
+    <!-- ====================================================================== -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-badge">Get in Touch</span>
+        <h1 class="section-title">Let's Build Something Exceptional</h1>
+        <p class="section-description">
+          Whether you need to overhaul a complex enterprise platform, align engineering with a tokenized design system, or solve intricate data workflows — let's start the conversation.
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================================================================== -->
+    <!-- CONTACT SECTION & FORM                                                 -->
+    <!-- ====================================================================== -->
+    <section class="section-spacing" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left: Inquiry Form -->
+          <div class="contact-card">
+            <h2 style="font-size: 24px; font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">
+              Project Inquiry
+            </h2>
+            <p style="font-size: 15px; color: var(--text-secondary); margin-bottom: 28px;">
+              Tell me about your product requirements, current bottlenecks, or timeline.
+            </p>
+
+            <form id="projectContactForm">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div class="form-group">
+                  <label class="form-label" for="fullName">Your Name *</label>
+                  <input type="text" id="fullName" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="workEmail">Work Email *</label>
+                  <input type="email" id="workEmail" class="form-input" placeholder="name@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="organization">Company / Organization</label>
+                <input type="text" id="organization" class="form-input" placeholder="e.g. Acme Financial Group">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Project Type</label>
+                <div class="radio-chips-group">
+                  <label class="chip-label">
+                    <input type="radio" name="projectType" value="enterprise" checked>
+                    <span class="chip-text">Enterprise Web App</span>
+                  </label>
+                  <label class="chip-label">
+                    <input type="radio" name="projectType" value="fintech">
+                    <span class="chip-text">Fintech / Banking</span>
+                  </label>
+                  <label class="chip-label">
+                    <input type="radio" name="projectType" value="system">
+                    <span class="chip-text">Design System</span>
+                  </label>
+                  <label class="chip-label">
+                    <input type="radio" name="projectType" value="saas">
+                    <span class="chip-text">B2B SaaS Redesign</span>
+                  </label>
+                  <label class="chip-label">
+                    <input type="radio" name="projectType" value="audit">
+                    <span class="chip-text">UX Heuristics Audit</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="projectTimeline">Expected Timeline</label>
+                <select id="projectTimeline" class="form-select">
+                  <option value="immediate">Immediate / Next 2 weeks</option>
+                  <option value="1month" selected>Within 1 month</option>
+                  <option value="quarter">Q3/Q4 2026 planning</option>
+                  <option value="exploratory">Exploratory discussion</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="projectMessage">Project Scope & Objectives *</label>
+                <textarea id="projectMessage" class="form-textarea" placeholder="Describe the challenges, key user personas, data requirements, or goals for this engagement..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 15px;">
+                Send Project Inquiry
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Info & Status Panel -->
+          <div class="contact-info-panel">
+            <!-- Availability status -->
+            <div class="info-card" style="background: #FFFFFF;">
+              <div class="info-card-header">
+                <span class="status-dot"></span>
+                <span>Current Availability</span>
+              </div>
+              <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">
+                Currently accepting select lead design contracts, architectural audits, and enterprise advisory roles for <strong>Q3/Q4 2026</strong>.
+              </p>
+            </div>
+
+            <!-- Direct Email -->
+            <div class="info-card" style="background: #FFFFFF;">
+              <div class="info-card-header">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>Direct Email</span>
+              </div>
+              <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 8px;">
+                Prefer direct email? Send specs, RFPs, or intro notes directly to:
+              </p>
+              <div style="font-size: 16px; font-weight: 700; color: var(--text-primary); font-family: var(--font-mono);">
+                contact@yassinezidane.com
+              </div>
+              <button id="copyEmailBtn" class="copy-email-btn" type="button">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                Copy to Clipboard
+              </button>
+            </div>
+
+            <!-- Timezone & Location -->
+            <div class="info-card" style="background: #FFFFFF;">
+              <div class="info-card-header">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Time Zone & Location</span>
+              </div>
+              <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 8px;">
+                Based in Tunis (CET / UTC+1). Seamless overlap with Europe, UK, GCC/Middle East, and North American morning hours.
+              </p>
+              <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 700; color: var(--accent-purple);" class="live-time-display">
+                --:--:-- (UTC+1)
+              </div>
+            </div>
+
+            <!-- Social profiles -->
+            <div class="info-card" style="background: #FFFFFF;">
+              <div class="info-card-header">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>Professional Networks</span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; font-weight: 600;">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent-blue); display: flex; align-items: center; gap: 8px;">
+                  <span>LinkedIn Profile</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent-rose); display: flex; align-items: center; gap: 8px;">
+                  <span>Dribbble Shots</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" style="color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+                  <span>GitHub Repositories</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-accordion">
+          <div class="section-title-wrapper" style="margin-bottom: 32px;">
+            <span class="section-badge">Common Questions</span>
+            <h2 class="section-title" style="font-size: 28px;">Frequently Asked Questions</h2>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>What is your typical engagement model?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.25s ease;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              I engage under three primary models: (1) <strong>End-to-End Product Lead</strong> for greenfield enterprise apps or major redesigns, (2) <strong>Design Systems Architecture</strong> to align Figma tokens with React micro-frontends, and (3) <strong>Strategic UX Advisory</strong> for quarterly heuristic audits and design team mentorship.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>How do you handle engineering handoff and technical constraints?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.25s ease;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Having deep fluency in HTML5, CSS3 architecture, and component lifecycles, I design with engineering reality in mind. All Figma components are accompanied by exact spacing scales, responsive breakpoint behaviors, and zero-ambiguity state diagrams (empty, loading, error, and maximum data limits).
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Do you sign NDAs for proprietary enterprise software?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.25s ease;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              Yes, routinely. The majority of my work in banking and government intelligence is strictly confidential. Mutual non-disclosure agreements are signed prior to reviewing internal wireframes or architectural schemas.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================== -->
+  <!-- FOOTER                                                                   -->
+  <!-- ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: #FFFFFF;">
+            <svg class="sparkle-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0L14.7 9.3L24 12L14.7 14.7L12 24L9.3 14.7L0 12L9.3 9.3L12 0Z"/>
+            </svg>
+            <span>Yassine Zidane</span>
+          </a>
+          <p>
+            Senior Product Designer with 9 years transforming complex enterprise software, banking platforms, and government reporting systems.
+          </p>
+          <div class="footer-status-badge">
+            <span class="status-dot"></span>
+            <span>Available for select projects</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Selected Work</a></li>
+            <li><a href="about.html">About & Process</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Expertise</h4>
+          <ul class="footer-links">
+            <li><a href="work.html">Fintech & Banking</a></li>
+            <li><a href="work.html">Government Intelligence</a></li>
+            <li><a href="work.html">B2B SaaS Analytics</a></li>
+            <li><a href="work.html">Design Systems</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Location & Time</h4>
+          <p style="font-size: 14px; color: #94A3B8; margin-bottom: 8px;">Based in Tunis (CET / UTC+1)</p>
+          <div style="font-family: var(--font-mono); font-size: 14px; color: #C084FC; font-weight: 600;" class="live-time-display">
+            --:--:-- (UTC+1)
+          </div>
+          <p style="font-size: 12px; color: #64748B; margin-top: 8px;">Remote-ready worldwide</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Yassine Zidane. All rights reserved.
+        </div>
+        <div class="footer-socials">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
