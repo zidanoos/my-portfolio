@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="pageTitle">Case Study | Yassine Zidane</title>
+    <meta
+      id="pageDescription"
+      name="description"
+      content="Enterprise product design case study by Yassine Zidane."
+    />
+    <link rel="icon" type="image/png" href="Images/Favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ======================================================================== -->
+    <!-- HEADER NAVIGATION                                                        -->
+    <!-- ======================================================================== -->
+    <header class="site-header">
+      <div class="container header-container">
+        <a
+          href="index.html"
+          class="brand-logo"
+          aria-label="Yassine Zidane Home"
+        >
+          <svg class="sparkle-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0L14.7 9.3L24 12L14.7 14.7L12 24L9.3 14.7L0 12L9.3 9.3L12 0Z"
+            />
+          </svg>
+          <span>Yassine Zidane</span>
+        </a>
+
+        <nav aria-label="Primary Navigation">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="work.html" class="nav-link active">Work</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+          </ul>
+        </nav>
+
+        <div style="display: flex; align-items: center; gap: 16px">
+          <a href="contact.html" class="btn-header-cta">Let's get in touch</a>
+          <button
+            class="mobile-nav-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ====================================================================== -->
+      <!-- PROJECT CONTENT (filled by js/project-detail.js)                       -->
+      <!-- ====================================================================== -->
+      <div id="projectContent">
+        <section class="page-hero">
+          <div class="container">
+            <a href="work.html" class="back-to-work-link">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              Back to All Work
+            </a>
+            <div
+              id="projectTags"
+              class="project-tags"
+              style="margin-top: 20px"
+            ></div>
+            <h1 id="projectTitle" class="section-title">Loading case study…</h1>
+          </div>
+        </section>
+
+        <section class="section-spacing" style="padding-top: 40px">
+          <div class="container">
+            <div
+              id="projectHeroImageWrap"
+              class="case-study-hero-image"
+              style="display: none"
+            ></div>
+
+            <div id="projectStats" class="case-study-stats"></div>
+
+            <div class="case-study-body">
+              <!-- Intro: high-level context for the recruiter -->
+              <div class="case-study-block">
+                <p id="projectIntro" class="case-study-intro"></p>
+              </div>
+
+              <!-- Problem statement: the ask, in one clear callout -->
+              <div class="case-study-block">
+                <h3>
+                  <span
+                    class="case-study-dot"
+                    style="background: #f59e0b"
+                  ></span
+                  >The Ask
+                </h3>
+                <p id="projectProblemStatement" class="case-study-problem"></p>
+              </div>
+
+              <div class="case-study-block">
+                <h3>
+                  <span
+                    class="case-study-dot"
+                    style="background: var(--accent-rose)"
+                  ></span
+                  >The Business &amp; UX Challenge
+                </h3>
+                <p id="projectChallenge"></p>
+                <div
+                  id="projectChallengeGrid"
+                  class="challenge-grid"
+                  style="display: none"
+                ></div>
+              </div>
+
+              <div class="case-study-block">
+                <h3>
+                  <span
+                    class="case-study-dot"
+                    style="background: var(--accent-purple)"
+                  ></span
+                  >Strategic UX Solution &amp; Architecture
+                </h3>
+                <p id="projectSolution"></p>
+                <ol
+                  id="projectProcessSteps"
+                  class="process-steps"
+                  style="display: none"
+                ></ol>
+              </div>
+
+              <div class="case-study-block">
+                <h3>
+                  <span
+                    class="case-study-dot"
+                    style="background: #10b981"
+                  ></span
+                  >Measurable Outcome &amp; Scalability
+                </h3>
+                <p id="projectImpact"></p>
+              </div>
+
+              <div
+                class="case-study-block"
+                id="projectTakeawaysBlock"
+                style="display: none"
+              >
+                <h3>
+                  <span
+                    class="case-study-dot"
+                    style="background: #f59e0b"
+                  ></span
+                  >Key Takeaways
+                </h3>
+                <ul id="projectTakeaways" class="takeaway-list"></ul>
+              </div>
+
+              <div
+                class="case-study-block"
+                id="projectRetroBlock"
+                style="display: none"
+              >
+                <h3>
+                  <span
+                    class="case-study-dot"
+                    style="background: #38bdf8"
+                  ></span
+                  >What I'd Do Differently Today
+                </h3>
+                <ul id="projectRetrospective" class="takeaway-list"></ul>
+              </div>
+            </div>
+
+            <div class="case-study-cta">
+              <span
+                >Want to explore technical specifications or wireframes?</span
+              >
+              <a href="contact.html" class="btn-primary">
+                Request Private Walkthrough
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ====================================================================== -->
+      <!-- NOT FOUND STATE (shown if the slug is missing/unknown)                 -->
+      <!-- ====================================================================== -->
+      <section
+        class="section-spacing"
+        id="projectNotFound"
+        style="display: none; text-align: center"
+      >
+        <div class="container">
+          <span class="section-badge">404</span>
+          <h1 class="section-title">Case study not found</h1>
+          <p class="section-description" style="margin: 0 auto 28px">
+            This project link is broken or the case study hasn't been written
+            yet.
+          </p>
+          <a href="work.html" class="btn-primary" style="display: inline-flex"
+            >Back to All Work</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- ======================================================================== -->
+    <!-- FOOTER                                                                   -->
+    <!-- ======================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html" class="brand-logo" style="color: #ffffff">
+              <svg class="sparkle-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0L14.7 9.3L24 12L14.7 14.7L12 24L9.3 14.7L0 12L9.3 9.3L12 0Z"
+                />
+              </svg>
+              <span>Yassine Zidane</span>
+            </a>
+            <p>
+              Senior Product Designer with 9+ years transforming complex
+              enterprise software, banking platforms, and government reporting
+              systems.
+            </p>
+            <div class="footer-status-badge">
+              <span class="status-dot"></span>
+              <span>Available for select projects</span>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="work.html">Selected Work</a></li>
+              <li><a href="about.html">About &amp; Process</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Expertise</h4>
+            <ul class="footer-links">
+              <li><a href="work.html">Fintech &amp; Banking</a></li>
+              <li><a href="work.html">Government Intelligence</a></li>
+              <li><a href="work.html">B2B SaaS Analytics</a></li>
+              <li><a href="work.html">Design Systems</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Location &amp; Time</h4>
+            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 8px">
+              Based in Tunis (CET / UTC+1)
+            </p>
+            <div
+              style="
+                font-family: var(--font-mono);
+                font-size: 14px;
+                color: #c084fc;
+                font-weight: 600;
+              "
+              class="live-time-display"
+            >
+              --:--:-- (UTC+1)
+            </div>
+            <p style="font-size: 12px; color: #64748b; margin-top: 8px">
+              Remote-ready worldwide
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>&copy; 2026 Yassine Zidane. All rights reserved.</div>
+          <div class="footer-socials">
+            <a
+              href="https://www.linkedin.com/in/yassinezidane/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              href="https://dribbble.com/YZidane"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Dribbble</a
+            >
+            <a
+              href="https://www.behance.net/yassinezidane"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Behance</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/case-studies-data.js"></script>
+    <script src="js/project-detail.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
