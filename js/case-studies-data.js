@@ -15,7 +15,7 @@ const CASE_STUDIES = {
     client: 'Banque Internationale Arabe de Tunisie (BIAT)',
     role: 'Lead Product Designer',
     timeline: '14 Months (2024 - 2025)',
-    heroImage: 'Images/BIAT_Thumbnail-new.png',
+    heroImage: 'Images/BIAT_Thumbnail-new.webp',
     tags: ['Fintech', 'Treasury & FX', 'Enterprise UX', 'Design System'],
     heroHighlight: 'Transformed multi-billion dollar trade finance operations and cash management workflows for 18,000+ corporate clients.',
     stats: [
@@ -32,7 +32,7 @@ const CASE_STUDIES = {
     client: 'The Executive Council (TEC)',
     role: 'Senior Enterprise UX Strategist',
     timeline: '12 Months (2023 - 2024)',
-    heroImage: 'Images/TEC-Thumbnail.png',
+    heroImage: 'Images/TEC-Thumbnail.webp',
     tags: ['Government Reporting', 'Data Intelligence', 'Executive KPIs'],
     heroHighlight: 'Consolidated 24 ministerial data streams into a single real-time executive dashboard for high-level government decision makers.',
     stats: [
@@ -66,7 +66,7 @@ const CASE_STUDIES = {
     client: 'Themar Financial Platform',
     role: 'Lead Product Designer // FinTech Systems Specialist',
     timeline: '8 Months (2022 – 2023)',
-    heroImage: 'Images/Themar-Thumbnail.png',
+    heroImage: 'Images/Themar-Thumbnail.webp',
     tags: ['Mobile-First', 'KYC & Compliance', 'Investment UX', 'Crowdlending', 'RTL'],
     heroHighlight: 'Translating an intricate, enterprise crowdlending web portal into a responsive, mobile-first investment engine built to accommodate distinct investor profiles simultaneously.',
     stats: [
