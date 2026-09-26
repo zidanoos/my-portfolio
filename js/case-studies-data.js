@@ -112,22 +112,36 @@ const CASE_STUDIES = {
     solution: 'Designed a foundational multi-tier design token architecture (Semantic, Component, Brand) implemented in Figma Variables with bi-directional syncing to React/CSS token files.',
     impact: 'Decreased design-to-development handoff time by 55% and eliminated 100% of contrast accessibility defects across products.'
   },
-      fifa: {
+  fifa: {
     title: 'FIFA+ Arabic Design System: RTL UX for the World Cup',
     client: 'FIFA',
     role: 'Lead Product Designer & RTL UX Specialist',
-    timeline: 'Nov 2021 to Dec 2022',
-    team: 'Embedded within the FIFA+ Design System team alongside product management, UX/UI designers, and design system engineers.',
-    heroImage: 'Images/FIFA-Thumbnail.png',
+    timeline: 'Nov 2021 to Dec 2022, 14 months',
+    team: 'FIFA+ Design System team, 25+ designers',
+    platform: 'Web, iOS, Android',
+    heroImage: 'Images/FIFA-Thumbnail.webp',
+    heroBg: 'Images/fifa-hero-bg.webp',
     tags: ['RTL Design Systems', 'Arabic UX', 'Design Tokens', 'Figma Variables', 'Localization', 'WCAG'],
     heroHighlight: 'Architecting a single codebase, dual directional design system for 22 MENA markets ahead of World Cup 2022.',
+    theme: {
+      '--cs-accent': '#0A5BC4',
+      '--cs-accent-bright': '#00AEEF',
+      '--cs-accent-soft': 'rgba(0, 174, 239, 0.10)',
+      '--cs-dark-1': '#081422',
+      '--cs-dark-2': '#10344F',
+      '--cs-dot-1': '#00AEEF',
+      '--cs-dot-2': '#0A7BD4',
+      '--cs-dot-3': '#0A5BC4',
+      '--cs-dot-4': '#14498F',
+      '--cs-dot-5': '#10344F'
+    },
     stats: [
       { label: 'Arabic Speakers Reached', val: '660M+' },
       { label: 'Countries', val: '22' },
       { label: 'Codebase Forks', val: '0' },
       { label: 'Dev Handoff Time', val: '-50%' }
     ],
-    intro: 'FIFA needed to launch a full Arabic experience for FIFA+, its global streaming platform, ahead of the Qatar World Cup. I joined as Lead Product Designer and RTL UX Specialist, working alongside product management, UX/UI designers, and design system engineers, in parallel with a 25+ person English-language team spread across several countries.',
+    intro: 'FIFA needed a full Arabic experience for FIFA+, its global streaming platform, live in time for the Qatar World Cup. Arabic speakers across MENA are one of the platform\'s largest growth markets, and launching without them would have meant 22 countries watching the biggest football event in the world through an interface built for a language they do not read.',
     problemStatement: 'Ship a complete right-to-left Arabic version of FIFA+ on a fixed, high-visibility launch date, without forking the existing English codebase and without falling behind it in features.',
     challengePoints: [
       {

@@ -68,7 +68,10 @@
       <!-- ====================================================================== -->
       <div id="projectContent">
         <section class="page-hero">
-          <div class="container">
+          <div class="hero-bg" id="projectHeroBg"></div>
+          <div class="hero-scrim"></div>
+          <div class="hero-scrim-bottom"></div>
+          <div class="container hero-content">
             <a href="work.html" class="back-to-work-link">
               <svg
                 width="16"
@@ -92,41 +95,54 @@
           </div>
         </section>
 
-        <section class="section-spacing" style="padding-top: 40px">
+        <section class="section-spacing case-study-main">
           <div class="container">
+            <!-- Hero image -->
             <div
               id="projectHeroImageWrap"
               class="case-study-hero-image"
               style="display: none"
             ></div>
 
+            <!-- Stats band -->
             <div id="projectStats" class="case-study-stats"></div>
 
+            <!-- Body -->
             <div class="case-study-body">
-              <!-- Intro: high-level context for the recruiter -->
+              <!-- Intro: meta strip + high-level context -->
               <div class="case-study-block">
+                <div id="projectMetaStrip" class="project-meta-strip"></div>
                 <p id="projectIntro" class="case-study-intro"></p>
               </div>
 
-              <!-- Problem statement: the ask, in one clear callout -->
+              <!-- The Ask: dark statement card -->
               <div class="case-study-block">
-                <h3>
-                  <span
-                    class="case-study-dot"
-                    style="background: #f59e0b"
-                  ></span
-                  >The Ask
-                </h3>
-                <p id="projectProblemStatement" class="case-study-problem"></p>
+                <div class="ask-card">
+                  <div class="ask-inner">
+                    <div class="ask-chip">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                      </svg>
+                      The Ask
+                    </div>
+                    <p id="projectProblemStatement"></p>
+                  </div>
+                </div>
               </div>
 
               <div class="case-study-block">
                 <h3>
-                  <span
-                    class="case-study-dot"
-                    style="background: var(--accent-rose)"
-                  ></span
-                  >The Business &amp; UX Challenge
+                  <span class="case-study-dot dot-1"></span>The Business &amp;
+                  UX Challenge
                 </h3>
                 <p id="projectChallenge"></p>
                 <div
@@ -138,11 +154,8 @@
 
               <div class="case-study-block">
                 <h3>
-                  <span
-                    class="case-study-dot"
-                    style="background: var(--accent-purple)"
-                  ></span
-                  >Strategic UX Solution &amp; Architecture
+                  <span class="case-study-dot dot-2"></span>Strategic UX
+                  Solution &amp; Architecture
                 </h3>
                 <p id="projectSolution"></p>
                 <ol
@@ -154,11 +167,8 @@
 
               <div class="case-study-block">
                 <h3>
-                  <span
-                    class="case-study-dot"
-                    style="background: #10b981"
-                  ></span
-                  >Measurable Outcome &amp; Scalability
+                  <span class="case-study-dot dot-3"></span>Measurable Outcome
+                  &amp; Scalability
                 </h3>
                 <p id="projectImpact"></p>
               </div>
@@ -168,13 +178,7 @@
                 id="projectTakeawaysBlock"
                 style="display: none"
               >
-                <h3>
-                  <span
-                    class="case-study-dot"
-                    style="background: #f59e0b"
-                  ></span
-                  >Key Takeaways
-                </h3>
+                <h3><span class="case-study-dot dot-4"></span>Key Takeaways</h3>
                 <ul id="projectTakeaways" class="takeaway-list"></ul>
               </div>
 
@@ -184,16 +188,14 @@
                 style="display: none"
               >
                 <h3>
-                  <span
-                    class="case-study-dot"
-                    style="background: #38bdf8"
-                  ></span
-                  >What I'd Do Differently Today
+                  <span class="case-study-dot dot-5"></span>What I'd Do
+                  Differently Today
                 </h3>
                 <ul id="projectRetrospective" class="takeaway-list"></ul>
               </div>
             </div>
 
+            <!-- Bottom CTA -->
             <div class="case-study-cta">
               <span
                 >Want to explore technical specifications or wireframes?</span

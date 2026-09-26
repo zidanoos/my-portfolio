@@ -57,6 +57,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Tab title + meta description. Role and timeline live here for SEO,
   // not in the visible page header.
+    // Immersive hero. Only projects that declare a heroBg get the dark treatment.
+  if (data.heroBg) {
+    contentSection.classList.add('immersive');
+    var heroBgEl = document.getElementById('projectHeroBg');
+    if (heroBgEl) {
+      heroBgEl.style.backgroundImage = 'url("' + data.heroBg + '")';
+      if (data.heroBgPosition) {
+        heroBgEl.style.backgroundPosition = data.heroBgPosition;
+      }
+    }
+  }
+    // Per-project colour theme. Any case study without one keeps the site purple.
+  if (data.theme) {
+    var root = document.documentElement;
+    for (var key in data.theme) {
+      if (Object.prototype.hasOwnProperty.call(data.theme, key)) {
+        root.style.setProperty(key, data.theme[key]);
+      }
+    }
+  }
   document.title = data.title + ' | Yassine Zidane';
   var metaDesc = document.getElementById('pageDescription');
   if (metaDesc && data.heroHighlight) metaDesc.setAttribute('content', data.heroHighlight);
@@ -92,7 +112,31 @@ document.addEventListener('DOMContentLoaded', function () {
     }).join(''));
   }
 
-  // Intro: high-level context (what the client needed, why I joined, who with)
+  // Project meta strip: role, timeline, team and platform at a glance
+  var META_ICONS = {
+    role: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>',
+    timeline: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>',
+    team: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>',
+    platform: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>'
+  };
+
+  var metaItems = [];
+  if (data.role) metaItems.push({ key: 'role', label: 'Role', value: data.role });
+  if (data.timeline) metaItems.push({ key: 'timeline', label: 'Timeline', value: data.timeline });
+  if (data.team) metaItems.push({ key: 'team', label: 'Team', value: data.team });
+  if (data.platform) metaItems.push({ key: 'platform', label: 'Platform', value: data.platform });
+
+  if (metaItems.length) {
+    setHTML('projectMetaStrip', metaItems.map(function (m) {
+      return '<div class="meta-item">' +
+        '<div class="meta-icon">' + META_ICONS[m.key] + '</div>' +
+        '<span class="meta-label">' + m.label + '</span>' +
+        '<span class="meta-value">' + m.value + '</span>' +
+        '</div>';
+    }).join(''));
+  }
+
+  // Intro: high-level context
   setText('projectIntro', data.intro);
 
   // Problem statement: the specific ask
